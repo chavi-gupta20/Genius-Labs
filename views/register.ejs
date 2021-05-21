@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#">Benuis Labs</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+</div>
+</nav>
+<div class="container mt-5 regpg">
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="box">
+        <h1>CREATE   ACCOUNT</h1>
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email" class="label">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password" class="label">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark btn-lg rg">Register</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
